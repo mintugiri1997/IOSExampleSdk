@@ -10,6 +10,7 @@
 		7A883F7126A21F64006AA309 /* Multiplier.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A883F6F26A21F64006AA309 /* Multiplier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A883F7926A21F8E006AA309 /* Other.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A883F7726A21F8E006AA309 /* Other.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7A883F7A26A21F8E006AA309 /* Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A883F7826A21F8E006AA309 /* Other.m */; };
+		7A883F9A26A23383006AA309 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A883F9926A23383006AA309 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,7 @@
 		7A883F7026A21F64006AA309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A883F7726A21F8E006AA309 /* Other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Other.h; sourceTree = "<group>"; };
 		7A883F7826A21F8E006AA309 /* Other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Other.m; sourceTree = "<group>"; };
+		7A883F9926A23383006AA309 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 				7A883F7026A21F64006AA309 /* Info.plist */,
 				7A883F7726A21F8E006AA309 /* Other.h */,
 				7A883F7826A21F8E006AA309 /* Other.m */,
+				7A883F9926A23383006AA309 /* Package.swift */,
 			);
 			path = Multiplier;
 			sourceTree = "<group>";
@@ -101,6 +104,7 @@
 				TargetAttributes = {
 					7A883F6B26A21F64006AA309 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A883F9A26A23383006AA309 /* Package.swift in Sources */,
 				7A883F7A26A21F8E006AA309 /* Other.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +270,7 @@
 		7A883F7526A21F64006AA309 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 427JW8LX2J;
@@ -282,6 +288,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -289,6 +297,7 @@
 		7A883F7626A21F64006AA309 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 427JW8LX2J;
@@ -306,6 +315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
