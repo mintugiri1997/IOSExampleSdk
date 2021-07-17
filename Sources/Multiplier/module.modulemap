@@ -1,0 +1,5 @@
+module Multiplier {
+umbrella header "../../Multiplier/Multiplier.h"
+export *
+module * { export * }
+}
