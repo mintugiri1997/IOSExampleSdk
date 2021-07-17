@@ -36,6 +36,7 @@
 		7A883F6226A21F63006AA309 = {
 			isa = PBXGroup;
 			children = (
+				7A883F9926A23383006AA309 /* Package.swift */,
 				7A883F6E26A21F64006AA309 /* Multiplier */,
 				7A883F6D26A21F64006AA309 /* Products */,
 			);
@@ -56,7 +57,6 @@
 				7A883F7026A21F64006AA309 /* Info.plist */,
 				7A883F7726A21F8E006AA309 /* Other.h */,
 				7A883F7826A21F8E006AA309 /* Other.m */,
-				7A883F9926A23383006AA309 /* Package.swift */,
 			);
 			path = Multiplier;
 			sourceTree = "<group>";
