@@ -16,6 +16,7 @@ FOUNDATION_EXPORT const unsigned char MultiplierVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Multiplier/PublicHeader.h>
 
 #import <Multiplier/Other.h>
+#import "Other.h"
 
 
 
