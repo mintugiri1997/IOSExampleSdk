@@ -1,6 +1,0 @@
-framework module Multiplier {
-  umbrella header "Multiplier.h"
-
-  export *
-  module * { export * }
-}
